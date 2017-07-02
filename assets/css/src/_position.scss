@@ -1,0 +1,56 @@
+// Position
+
+.absolute { position: absolute; }
+.relative { position: relative; }
+.fixed { position: fixed; }
+.static { position: static; }
+
+.top-auto { top: auto; }
+.top-0 { top: 0; }
+.top-50 { top: 50%; }
+.top-100 { top: 100%; }
+
+.right-auto { right: auto; }
+.right-0 { right: 0; }
+.right-50 { right: 50%; }
+.right-100 { right: 100%; }
+
+.bottom-auto { bottom: auto; }
+.bottom-0 { bottom: 0; }
+.bottom-50 { bottom: 50%; }
+.bottom-100 { bottom: 100%; }
+
+.left-auto { left: auto; }
+.left-0 { left: 0; }
+.left-50 { left: 50%; }
+.left-100 { left: 100%; }
+
+.translate { transform: translate(-50%, -50%); }
+.translate-y { transform: translateY(-50%); }
+.translate-x { transform: translateX(-50%); }
+
+@include generate-breakpoint-prefixes {
+  &static { position: static; }
+  &relative { position: relative; }
+  &absolute { position: absolute; }
+  &fixed { position: fixed; }
+  &top-auto { top: auto; }
+  &top-0 { top: 0; }
+  &top-50 { top: 50%; }
+  &top-100 { top: 100%; }
+  &right-auto { right: auto; }
+  &right-0 { right: 0; }
+  &right-50 { right: 50%; }
+  &right-100 { right: 100%; }
+  &bottom-auto { bottom: auto; }
+  &bottom-0 { bottom: 0; }
+  &bottom-50 { bottom: 50%; }
+  &bottom-100 { bottom: 100%; }
+  &left-auto { left: auto; }
+  &left-0 { left: 0; }
+  &left-50 { left: 50%; }
+  &left-100 { left: 100%; }
+  &translate { transform: translate(-50%, -50%); }
+  &translate-y { transform: translateY(-50%); }
+  &translate-x { transform: translateX(-50%); }
+}

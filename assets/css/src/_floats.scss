@@ -1,0 +1,11 @@
+// Float
+
+.left { float: left; }
+.right { float: right; }
+.float-none { float: none; }
+
+@include generate-breakpoint-prefixes {
+  &left { float: left; }
+  &right { float: right; }
+  &float-none { float: none; }
+}

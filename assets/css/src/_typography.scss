@@ -1,0 +1,12 @@
+// Typography
+
+.measure { max-width: 30em; }
+
+.truncate {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.nowrap { white-space: nowrap; }
+.break-word { word-wrap: break-word; }

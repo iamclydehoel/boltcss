@@ -1,0 +1,26 @@
+// Background Images
+
+// Size
+.bg-cover { background-size: cover; }
+.bg-contain { background-repeat: no-repeat; background-size: contain; }
+
+// Repeat
+.bg-repeat { background-repeat: repeat; }
+.bg-repeat-y { background-repeat: repeat-y; }
+.bg-repeat-x { background-repeat: repeat-x; }
+.bg-repeat-none { background-repeat: no-repeat; }
+
+// Attachment
+.bg-fixed { background-attachment: fixed; }
+.bg-scroll { background-attachment: scroll; }
+
+// Position
+.bg-top { background-position: top; }
+.bg-top-right { background-position: top right; }
+.bg-top-left { background-position: top left; }
+.bg-right { background-position: right; }
+.bg-left { background-position: left; }
+.bg-bottom { background-position: bottom; }
+.bg-bottom-right { background-position: bottom right; }
+.bg-bottom-left { background-position: bottom left; }
+.bg-center { background-position: center; }

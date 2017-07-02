@@ -1,0 +1,19 @@
+// Display
+
+.inline { display: inline; }
+.inline-block { display: inline-block; }
+.block { display: block; }
+.table { display: table; }
+.table-row { display: table-row; }
+.table-cell { display: table-cell; }
+.table-fixed { table-layout: fixed; }
+
+@include generate-breakpoint-prefixes {
+  &inline { display: inline; }
+  &inline-block { display: inline-block; }
+  &block { display: block; }
+  &table { display: table; }
+  &table-row { display: table-row; }
+  &table-cell { display: table-cell; }
+  &table-fixed { table-layout: fixed; }
+}

@@ -1,0 +1,8 @@
+// Background Color
+
+@each $color-name, $color-value in $colors {
+	.bg-#{$color-name} { background-color: $color-value; }
+	.hover-bg-#{$color-name}:hover { background-color: $color-value; }
+}
+
+.bg-animate { transition: background $transition-value; }

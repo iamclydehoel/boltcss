@@ -1,0 +1,43 @@
+// Settings
+
+// Color
+$black: #111 !default;
+$white: #fff !default;
+$light-grey: #eee !default;
+$grey: #ccc !default;
+$blue: #1876d9 !default;
+
+$colors: (
+  transparent: transparent,
+  black: $black,
+	white: $white,
+  light-grey: $light-grey,
+  grey: $grey,
+  blue: $blue
+);
+
+// Border
+$border-width: 1px !default;
+$border-radius: 4px !default;
+
+// Transition
+$transition-value: .4s cubic-bezier(.645, .045, .355, 1.000) !default;
+
+// Fonts
+$sans: -apple-system, BlinkMacSystemFont, Roboto, "Segoe UI", Helvetica, Arial, sans-serif !default;
+$serif: Georgia, Times, serif !default;
+$mono: Consolas, Monaco, monospace !default;
+
+// Debug
+$debug: false !default;
+
+// Breakpoints
+$breakpoint-sm: 32rem !default;
+$breakpoint-md: 48rem !default;
+$breakpoint-lg: 64rem !default;
+
+$breakpoints: (
+	sm: $breakpoint-sm,
+	md: $breakpoint-md,
+	lg: $breakpoint-lg
+);
