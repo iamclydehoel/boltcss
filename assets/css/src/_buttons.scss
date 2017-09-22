@@ -26,12 +26,6 @@
 
   &:hover,
   &:focus {
-    background-color: $blue;
-    border-color: rgba($black, .25);
-    color: $white;
-  }
-
-  &:active {
-    border-color: rgba($black, .5);
+    border-color: currentColor;
   }
 }
