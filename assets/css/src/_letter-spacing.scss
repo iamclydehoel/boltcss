@@ -1,0 +1,11 @@
+// Letter Spacing
+
+@for $i from 0 through 5 {
+  $ls: ($i * 10rem / 100);
+  .ls#{$i} { letter-spacing: $ls; }
+}
+
+@for $i from 1 through 5 {
+  $lsn: ($i * -10rem / 100);
+  .lsn#{$i} { letter-spacing: $lsn; }
+}
