@@ -5,4 +5,11 @@
 	.hover-bg-#{$color-name}:hover { background-color: $color-value; }
 }
 
+@each $tint-num, $tint-val in $tints {
+  .bg-darken-#{$tint-num} { background-color: rgba(0, 0, 0, $tint-val); }
+  .bg-lighten-#{$tint-num} { background-color: rgba(255, 255, 255, $tint-val); }
+  .hover-bg-darken-#{$tint-num}:hover { background-color: rgba(0, 0, 0, $tint-val); }
+  .hover-bg-lighten-#{$tint-num}:hover { background-color: rgba(255, 255, 255, $tint-val); }
+}
+
 .bg-animate { transition: background $transition-value; }

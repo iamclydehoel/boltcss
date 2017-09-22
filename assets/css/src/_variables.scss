@@ -16,6 +16,37 @@ $colors: (
   blue: $blue
 );
 
+// Tints
+$tint-1: .125 !default;
+$tint-2: .25 !default;
+$tint-3: .375 !default;
+$tint-4: .5 !default;
+$tint-5: .75 !default;
+$tint-6: .9 !default;
+
+$tints: (
+	1: $tint-1,
+	2: $tint-2,
+	3: $tint-3,
+	4: $tint-4,
+	5: $tint-5,
+	6: $tint-6
+);
+
+$darken-1: rgba(0, 0, 0, $tint-1) !default;
+$darken-2: rgba(0, 0, 0, $tint-2) !default;
+$darken-3: rgba(0, 0, 0, $tint-3) !default;
+$darken-4: rgba(0, 0, 0, $tint-4) !default;
+$darken-5: rgba(0, 0, 0, $tint-5) !default;
+$darken-6: rgba(0, 0, 0, $tint-6) !default;
+
+$lighten-1:	rgba(255, 255, 255, $tint-1) !default;
+$lighten-2:	rgba(255, 255, 255, $tint-2) !default;
+$lighten-3: rgba(255, 255, 255, $tint-3) !default;
+$lighten-4: rgba(255, 255, 255, $tint-4) !default;
+$lighten-5: rgba(255, 255, 255, $tint-5) !default;
+$lighten-6: rgba(255, 255, 255, $tint-6) !default;
+
 // Border
 $border-width: 1px !default;
 $border-radius: 4px !default;
