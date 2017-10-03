@@ -2,7 +2,7 @@
 
 // Mute
 
-.hover-mute {
+.hover\:mute {
   opacity: 1;
   transition: $transition-value;
 
@@ -19,7 +19,7 @@
 // Unmute
 // Hint: Combine with the 'muted' class
 
-.hover-unmute {
+.hover\:unmute {
   transition: $transition-value;
 
   &:hover,
@@ -34,7 +34,7 @@
 //   <div class="reveal">Element revealed on hover or focus</div>
 // </div>
 
-.hover-reveal {
+.hover\:reveal {
 
   .reveal {
     opacity: 0;
@@ -58,7 +58,7 @@
 //   <div class="affect">Highlights hovered element by affecting others</div>
 // </div>
 
-.hover-affect {
+.hover\:affect {
 
   &:hover {
 
@@ -83,7 +83,7 @@
 //   <div class="zoom">Element zoomed in on hover or focus</div>
 // </div>
 
-.hover-zoom {
+.hover\:zoom {
 
   .zoom {
     transform: scale(1, 1);

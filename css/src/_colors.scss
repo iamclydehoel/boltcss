@@ -2,5 +2,5 @@
 
 @each $color-name, $color-value in $colors {
 	.#{$color-name} { color: $color-value; }
-	.hover-#{$color-name}:hover { color: $color-value; }
+	.hover\:#{$color-name}:hover { color: $color-value; }
 }
