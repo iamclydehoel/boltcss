@@ -1,0 +1,18 @@
+// Ratio
+
+.square,
+.ratio-16-9 {
+  height: 0;
+}
+
+.square { padding-bottom: 100%; }
+.ratio-16-9 { padding-bottom: 56.25%; }
+
+@include generate-breakpoint-prefixes {
+  &square,
+  &ratio-16-9 {
+    height: 0;
+  }
+  &square { padding-bottom: 100%; }
+  &ratio-16-9 { padding-bottom: 56.25%; }
+}
