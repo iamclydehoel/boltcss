@@ -5,7 +5,7 @@
 .select {
   appearance: none;
   background-color: $white;
-  border: $border-width solid rgba($black, .125);
+  border: $border-width solid $darken-1;
   border-radius: $border-radius;
   box-sizing: border-box;
   font-family: inherit;
@@ -16,7 +16,7 @@
   transition: border $transition-value;
 
   &:focus {
-    border-color: rgba($black, .5);
+    border-color: $darken-3;
   }
 
   &:disabled {
