@@ -13,9 +13,9 @@
 
 @mixin generate-breakpoint-prefixes {
 	@each $breakpoint-name, $breakpoint-value in $breakpoints {
-		$breakpoint-prefix: "#{$breakpoint-name}-";
+		$breakpoint-prefix: "#{$breakpoint-name}";
 		@include media-query($breakpoint-name) {
-			.#{$breakpoint-prefix} { @content; }
+			.#{$breakpoint-prefix}\: { @content; }
 		}
 	}
 }
