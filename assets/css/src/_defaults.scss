@@ -28,7 +28,7 @@ strong {
 a,
 button {
   color: inherit;
-  transition: $transition-value;
+  transition: all $transition-value, font 0s, padding 0s, margin 0s;
 }
 
 a {
@@ -70,4 +70,18 @@ img {
   max-width: 100%;
   height: auto;
   border: 0;
+}
+
+pre, code, samp {
+  font-family: $mono;
+  tab-size: 2;
+}
+
+hr {
+  border-color: currentColor;
+  border-width: 1px 0 0 0;
+  border-style: solid;
+  box-sizing: content-box;
+  height: 0;
+  overflow: visible;
 }
