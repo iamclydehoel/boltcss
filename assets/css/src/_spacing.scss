@@ -4,13 +4,15 @@ $space-1: .5rem !default;
 $space-2: 1rem !default;
 $space-3: 2rem !default;
 $space-4: 4rem !default;
+$space-5: 8rem !default;
 
 $spacing: (
   0: 0,
   1: $space-1,
   2: $space-2,
   3: $space-3,
-  4: $space-4
+  4: $space-4,
+  5: $space-5
 );
 
 @each $space-key, $space-value in $spacing {
