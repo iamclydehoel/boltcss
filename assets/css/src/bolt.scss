@@ -13,7 +13,6 @@
 @import 'cursor';
 @import 'debug';
 @import 'defaults';
-@import 'display';
 @import 'flex';
 @import 'floats';
 @import 'font-family';
@@ -30,6 +29,7 @@
 @import 'opacity';
 @import 'overflow';
 @import 'position';
+@import 'ratio';
 @import 'spacing';
 @import 'text-align';
 @import 'text-decoration';
@@ -45,5 +45,6 @@
 @import 'borders';
 @import 'border-colors';
 @import 'border-radius';
+@import 'display';
 
 @import 'plugins/plugins';
