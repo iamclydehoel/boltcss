@@ -4,3 +4,8 @@
 	.border-#{$color-name} { border-color: $color-value; }
   .hover-border-#{$color-name}:hover { border-color: $color-value; }
 }
+
+@each $tint-num, $tint-val in $tints {
+  .border-darken-#{$tint-num} { border-color: rgba(0, 0, 0, $tint-val); }
+  .border-lighten-#{$tint-num} { border-color: rgba(255, 255, 255, $tint-val); }
+}
