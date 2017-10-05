@@ -1,5 +1,5 @@
 # BoltCSS
-## Lightweight, flexible framework designed for speed
+Lightweight, flexible framework designed for speed
 
 ### Getting started
 
