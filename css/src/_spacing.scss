@@ -22,9 +22,10 @@ $spacing: (
 	.mb#{$space-key} { margin-bottom: $space-value; }
 	.ml#{$space-key} { margin-left: $space-value; }
 
+  .my#{$space-key} { margin-top: $space-value; margin-bottom: $space-value; }
+  .mx#{$space-key} { margin-right: $space-value; margin-left: $space-value; }
+
 	@if $space-key > 0 {
-    .my#{$space-key} { margin-top: $space-value; margin-bottom: $space-value; }
-  	.mx#{$space-key} { margin-right: $space-value; margin-left: $space-value; }
     .mxn#{$space-key} { margin-right: -$space-value; margin-left: -$space-value; }
 	}
 
@@ -34,10 +35,8 @@ $spacing: (
 	.pb#{$space-key} { padding-bottom: $space-value; }
 	.pl#{$space-key} { padding-left: $space-value; }
 
-  @if $space-key > 0 {
-  	.py#{$space-key} { padding-top: $space-value; padding-bottom: $space-value; }
-  	.px#{$space-key} { padding-right: $space-value; padding-left: $space-value; }
-  }
+	.py#{$space-key} { padding-top: $space-value; padding-bottom: $space-value; }
+	.px#{$space-key} { padding-right: $space-value; padding-left: $space-value; }
 }
 
 .mr-auto { margin-right: auto; }
@@ -52,9 +51,10 @@ $spacing: (
   	&mb#{$space-key} { margin-bottom: $space-value; }
   	&ml#{$space-key} { margin-left: $space-value; }
 
+    &my#{$space-key} { margin-top: $space-value; margin-bottom: $space-value; }
+    &mx#{$space-key} { margin-right: $space-value; margin-left: $space-value; }
+
   	@if $space-key > 0 {
-      &my#{$space-key} { margin-top: $space-value; margin-bottom: $space-value; }
-    	&mx#{$space-key} { margin-right: $space-value; margin-left: $space-value; }
       &mxn#{$space-key} { margin-right: -$space-value; margin-left: -$space-value; }
   	}
 
@@ -64,9 +64,7 @@ $spacing: (
   	&pb#{$space-key} { padding-bottom: $space-value; }
   	&pl#{$space-key} { padding-left: $space-value; }
 
-    @if $space-key > 0 {
-    	&py#{$space-key} { padding-top: $space-value; padding-bottom: $space-value; }
-    	&px#{$space-key} { padding-right: $space-value; padding-left: $space-value; }
-    }
+    &py#{$space-key} { padding-top: $space-value; padding-bottom: $space-value; }
+    &px#{$space-key} { padding-right: $space-value; padding-left: $space-value; }
   }
 }
