@@ -1,21 +1,17 @@
-var gulp            = require('gulp');
-var browserSync     = require('browser-sync');
-var connect         = require('gulp-connect-php');
-var plumber         = require('gulp-plumber');
-var sass            = require('gulp-sass');
-var autoprefixer    = require('gulp-autoprefixer');
-var cssnano         = require('gulp-cssnano');
-var rename          = require('gulp-rename');
-var sourcemaps      = require('gulp-sourcemaps');
+var gulp         = require('gulp');
+var browserSync  = require('browser-sync');
+var plumber      = require('gulp-plumber');
+var sass         = require('gulp-sass');
+var autoprefixer = require('gulp-autoprefixer');
+var cssnano      = require('gulp-cssnano');
+var rename       = require('gulp-rename');
+var sourcemaps   = require('gulp-sourcemaps');
 
 gulp.task('sync', function() {
-  connect.server({}, function (){
-    browserSync({
-      port: 8080,
-      ui: false,
-      notify: false,
-      proxy: 'localhost:8000'
-    });
+  browserSync.init({
+    server: {
+      baseDir: "./"
+    }
   });
 });
 
@@ -37,7 +33,7 @@ gulp.task('styles', function(){
 });
 
 gulp.task('watch', function(){
-  gulp.watch('**/*.{php,html}', ['reload']);
+  gulp.watch('**/*.html', ['reload']);
   gulp.watch('css/src/**/*.scss', ['styles']);
 });
 
