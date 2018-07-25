@@ -1,21 +1,21 @@
 // Mixins
 
 @mixin media-query($breakpoint) {
-	@if (map-get($breakpoints, $breakpoint)) == null {
-		@content;
-	}
-	@else {
-		@media (min-width: #{map-get($breakpoints, $breakpoint)}) {
-			@content;
-		}
-	}
+  @if (map-get($breakpoints, $breakpoint)) == null {
+    @content;
+  }
+  @else {
+    @media (min-width: #{map-get($breakpoints, $breakpoint)}) {
+      @content;
+    }
+  }
 }
 
 @mixin generate-breakpoint-prefixes {
-	@each $breakpoint-name, $breakpoint-value in $breakpoints {
-		$breakpoint-prefix: "#{$breakpoint-name}";
-		@include media-query($breakpoint-name) {
-			.#{$breakpoint-prefix}\: { @content; }
-		}
-	}
+  @each $breakpoint-name, $breakpoint-value in $breakpoints {
+    $breakpoint-prefix: "#{$breakpoint-name}";
+    @include media-query($breakpoint-name) {
+      .#{$breakpoint-prefix}\: { @content; }
+    }
+  }
 }

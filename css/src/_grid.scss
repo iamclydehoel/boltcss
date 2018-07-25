@@ -15,13 +15,13 @@ $grid-columns: 12 !default;
 }
 
 @for $i from 1 through $grid-columns {
-	$w: ($i / $grid-columns * 100%);
-	.col-#{$i} { width: $w; }
+  $w: ($i / $grid-columns * 100%);
+  .col-#{$i} { width: $w; }
 }
 
 @include generate-breakpoint-prefixes {
   @for $i from 1 through $grid-columns {
-  	$w: ($i / $grid-columns * 100%);
-  	&col-#{$i} { width: $w; }
+    $w: ($i / $grid-columns * 100%);
+    &col-#{$i} { width: $w; }
   }
 }
